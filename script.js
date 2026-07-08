@@ -184,6 +184,51 @@ u2.listeningExercises = [
   },
 ];
 
+/* ===== FLASHCARD DATA ===== */
+u1.vocabCards = [
+  "Hello", "Goodbye", "Yes", "No", "Please",
+  "Thank you", "Good morning", "My name is...", "Nice to meet you", "How are you?"
+];
+u1.idiomCards = [
+  "What's up?", "Sit down", "Come in"
+];
+u2.vocabCards = [
+  "Name", "Age", "Country", "City", "Address",
+  "Phone", "Email", "Single", "Married", "Spell"
+];
+u2.idiomCards = [
+  "Fill out", "Show up", "Get along"
+];
+
+function renderFlashcards(p) {
+  var prefix = p === 'u1' ? 'u1' : 'u2';
+  var data = p === 'u1' ? u1 : u2;
+
+  // Vocab grid (first 8 items on page 1, remaining 2 on page 2)
+  var vg1 = document.getElementById(prefix + '-vocab-grid');
+  if (vg1) {
+    data.vocabCards.forEach(function (word, i) {
+      var imgSrc = 'images/' + prefix + '/' + prefix + '-vocab-' + (i + 1) + '.png';
+      var item = document.createElement('div');
+      item.className = 'flashcard-item';
+      item.innerHTML = '<img src="' + imgSrc + '" alt="' + word + '" loading="lazy" />';
+      vg1.appendChild(item);
+    });
+  }
+
+  // Idiom grid
+  var ig = document.getElementById(prefix + '-idiom-grid');
+  if (ig) {
+    data.idiomCards.forEach(function (word, i) {
+      var imgSrc = 'images/' + prefix + '/' + prefix + '-idiom-' + (i + 1) + '.png';
+      var item = document.createElement('div');
+      item.className = 'flashcard-item';
+      item.innerHTML = '<img src="' + imgSrc + '" alt="' + word + '" loading="lazy" />';
+      ig.appendChild(item);
+    });
+  }
+}
+
 /* ===== RENDER ENGINE ===== */
 function blankHTML() {
   return '<span class="blank"></span>';
@@ -309,6 +354,8 @@ function switchUnit(n) {
 
 /* ===== INIT ===== */
 document.addEventListener('DOMContentLoaded', function () {
+  renderFlashcards('u1');
   renderUnit('u1');
+  renderFlashcards('u2');
   renderUnit('u2');
 });

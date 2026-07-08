@@ -218,17 +218,28 @@ h1, h2, h3, h4 {
   box-shadow: var(--card-shadow);
 }
 .figure-img { width: 100%; display: block; }
-#part-2a .figure-card {
-  display: flex;
-  justify-content: center;
-  height: 300px;
+
+/* Flashcard Grid */
+.flashcard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
-#part-2a .figure-img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
+.flashcard-item {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 0.875rem;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.15s;
 }
-#part-2b .figure-img { max-height: 350px; width: auto; object-fit: contain; margin: 0 auto; }
+.flashcard-item:hover { transform: translateY(-3px); }
+.flashcard-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* Subheadings */
 .subheading {
