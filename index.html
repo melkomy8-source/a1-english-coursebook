@@ -16,6 +16,7 @@
     .exercise-list { list-style: none; padding-left: 0; counter-reset: ex-item; }
     .exercise-list li { counter-increment: ex-item; padding-left: 2rem; position: relative; margin-bottom: 0.35rem; }
     .exercise-list li::before { content: counter(ex-item) "."; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+    .exercise-list.two-col { column-count: 2; column-gap: 2rem; }
   </style>
 </head>
 <body>
@@ -422,7 +423,7 @@
                 <h2 class="section-title">Grammar</h2>
               </div>
             </div>
-            <h3 class="subheading">Wh- Questions &amp; Possessive Adjectives</h3>
+            <h3 class="subheading">Wh- Questions</h3>
             <div class="table-wrap">
               <table class="data-table">
                 <thead>
@@ -442,6 +443,32 @@
                 </tbody>
               </table>
             </div>
+          </section>
+        </div>
+        <div class="a4-page-footer">
+          <div class="footer-row">
+            <div class="footer-brand">
+              <img src="logo.jpg" alt="" class="footer-sm-logo" />
+              <span>Komy's Academy &middot; Live and Learn</span>
+            </div>
+            <span>A1 English &middot; Unit 2 &middot; Personal Info</span>
+            <span class="footer-page-num">&mdash; Page 2 &mdash;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 3: Grammar continued -- table + exercises -->
+      <div class="a4-page">
+        <div class="a4-page-content" style="display:flex;flex-direction:column;">
+          <section class="section" id="part-3b" style="flex:1;display:flex;flex-direction:column;">
+            <div class="section-header">
+              <div class="section-num">3</div>
+              <div>
+                <h2 class="section-title">Grammar <span class="continued">(continued)</span></h2>
+              </div>
+            </div>
+
+            <!-- Possessive Adjectives table moved from Page 2 -->
             <div class="table-wrap" style="margin-top:1rem;">
               <table class="data-table">
                 <thead>
@@ -460,30 +487,9 @@
                 </tbody>
               </table>
             </div>
-          </section>
-        </div>
-        <div class="a4-page-footer">
-          <div class="footer-row">
-            <div class="footer-brand">
-              <img src="logo.jpg" alt="" class="footer-sm-logo" />
-              <span>Komy's Academy &middot; Live and Learn</span>
-            </div>
-            <span>A1 English &middot; Unit 2 &middot; Personal Info</span>
-            <span class="footer-page-num">&mdash; Page 2 &mdash;</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- Page 3: Grammar continued -- exercises -->
-      <div class="a4-page">
-        <div class="a4-page-content">
-          <section class="section" id="part-3b">
-            <div class="section-header">
-              <div class="section-num">3</div>
-              <div>
-                <h2 class="section-title">Grammar <span class="continued">(continued)</span></h2>
-              </div>
-            </div>
+            <!-- Spacer pushes exercises toward footer -->
+            <div style="flex:1;"></div>
 
             <div class="exercise-card">
               <div class="exercise-header">
@@ -491,16 +497,16 @@
                 <h4 class="exercise-title">Fill in the Blanks</h4>
               </div>
               <p class="exercise-instr"><strong>Instructions:</strong> Choose the correct Wh- word (what, where, when, who, why, how) to complete each question.</p>
-              <ol class="exercise-list" id="u2-fill-blanks"></ol>
+              <ol class="exercise-list two-col" id="u2-fill-blanks"></ol>
             </div>
 
-            <div class="exercise-card">
+            <div class="exercise-card" style="margin-bottom:1.5rem;">
               <div class="exercise-header">
                 <span class="orange-bar"></span>
                 <h4 class="exercise-title">Possessive Adjectives</h4>
               </div>
               <p class="exercise-instr"><strong>Instructions:</strong> Replace the phrase in parentheses with the correct possessive adjective (my, your, his, her, our, their).</p>
-              <ol class="exercise-list" id="u2-pronoun-replacements"></ol>
+              <ol class="exercise-list two-col" id="u2-pronoun-replacements"></ol>
             </div>
           </section>
         </div>
