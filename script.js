@@ -66,7 +66,7 @@ u1.listeningExercises = [
     questions: [
       { q: "What is the woman's name?", options: ["Sarah", "Emma", "Chris"] },
       { q: 'Who uses the expression "What\'s up?"', options: ["Emma", "Chris", "The teacher"] },
-      { q: 'Fill in the blank: "I am good, ______ you."', isFill: true },
+      { q: 'Fill in the blank: "I am good, ______ you."', options: ["and", "with", "for"] },
     ],
   },
   {
@@ -170,7 +170,7 @@ u2.listeningExercises = [
     questions: [
       { q: "What is the girl's name?", options: ["Anna", "Emma", "Olivia"] },
       { q: 'What does she say her email is?', options: ["anna@mail.com", "anna@school.edu", "anna@web.org"] },
-      { q: 'Fill in the blank: "Can you ______ that, please?"', isFill: true },
+      { q: 'Fill in the blank: "Can you ______ that, please?"', options: ["spell", "read", "repeat"] },
     ],
   },
   {
