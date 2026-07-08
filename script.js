@@ -63,6 +63,13 @@ u1.listeningExercises = [
   {
     dialogueNum: 1,
     title: "Emma and Chris greet each other.",
+    lines: [
+      { speaker: "Emma", line: "Hello! My name is Emma. What is your name?" },
+      { speaker: "Chris", line: "Hi, Emma. I am Chris. Nice to meet you!" },
+      { speaker: "Emma", line: "Nice to meet you too, Chris. How are you?" },
+      { speaker: "Chris", line: "I am good, and you?" },
+      { speaker: "Emma", line: "I am good too. What's up?" },
+    ],
     questions: [
       { q: "What is the woman's name?", options: ["Sarah", "Emma", "Chris"] },
       { q: 'Who uses the expression "What\'s up?"', options: ["Emma", "Chris", "The teacher"] },
@@ -72,6 +79,13 @@ u1.listeningExercises = [
   {
     dialogueNum: 2,
     title: "A student arrives late to Mr. Smith's class.",
+    lines: [
+      { speaker: "Alex", line: "Good morning, Mr. Smith. I am sorry I am late." },
+      { speaker: "Mr. Smith", line: "Good morning, Alex. Please sit down." },
+      { speaker: "Alex", line: "Yes, thank you." },
+      { speaker: "Mr. Smith", line: "No problem. We are happy you are here." },
+      { speaker: "Alex", line: "Thank you, Mr. Smith." },
+    ],
     questions: [
       { q: "Who is Mr. Smith?", options: ["A student", "A friend", "The teacher"] },
       { q: "What does Mr. Smith tell Alex to do?", options: ["Say hello", "Sit down", "Stand up"] },
@@ -81,6 +95,15 @@ u1.listeningExercises = [
   {
     dialogueNum: 3,
     title: "Paul introduces his friend Maria to Lisa.",
+    lines: [
+      { speaker: "Paul", line: "Hello, Lisa. I want you to meet my friend." },
+      { speaker: "Lisa", line: "Sure! Who is it?" },
+      { speaker: "Paul", line: "This is Maria. She is my classmate." },
+      { speaker: "Maria", line: "Hi, Lisa. Nice to meet you!" },
+      { speaker: "Lisa", line: "Nice to meet you too, Maria!" },
+      { speaker: "Paul", line: "Well, goodbye for now!" },
+      { speaker: "Maria & Lisa", line: "Goodbye!" },
+    ],
     questions: [
       { q: "Who is Paul's friend?", options: ["Lisa", "Maria", "Emma"] },
       { q: "Which subject pronoun does Paul use to introduce Maria?", options: ["He", "She", "It"] },
@@ -158,6 +181,16 @@ u2.listeningExercises = [
   {
     dialogueNum: 1,
     title: "A student fills out a registration form.",
+    lines: [
+      { speaker: "Clerk", line: "Hello! Welcome. What is your first name?" },
+      { speaker: "Student", line: "My name is Mark." },
+      { speaker: "Clerk", line: "And which country are you from?" },
+      { speaker: "Student", line: "I am from Canada." },
+      { speaker: "Clerk", line: "Great. And what is your phone number?" },
+      { speaker: "Student", line: "It is 555-1234." },
+      { speaker: "Clerk", line: "Thank you. Here is your student card." },
+      { speaker: "Student", line: "Thank you!" },
+    ],
     questions: [
       { q: "What is the student's first name?", options: ["Mike", "Mark", "Matt"] },
       { q: "Which country is he from?", options: ["Canada", "Mexico", "Brazil"] },
@@ -167,6 +200,16 @@ u2.listeningExercises = [
   {
     dialogueNum: 2,
     title: "Two classmates exchange email addresses.",
+    lines: [
+      { speaker: "Anna", line: "Hi! My name is Anna. What is your name?" },
+      { speaker: "Ben", line: "I am Ben. Nice to meet you!" },
+      { speaker: "Anna", line: "Nice to meet you too. What is your email address?" },
+      { speaker: "Ben", line: "It is ben@mail.com. And yours?" },
+      { speaker: "Anna", line: "Mine is anna@school.edu." },
+      { speaker: "Ben", line: "Can you spell that, please?" },
+      { speaker: "Anna", line: "Sure. A-N-N-A at school dot E-D-U." },
+      { speaker: "Ben", line: "Thank you! I will send you a message." },
+    ],
     questions: [
       { q: "What is the girl's name?", options: ["Anna", "Emma", "Olivia"] },
       { q: 'What does she say her email is?', options: ["anna@mail.com", "anna@school.edu", "anna@web.org"] },
@@ -176,6 +219,16 @@ u2.listeningExercises = [
   {
     dialogueNum: 3,
     title: "A secretary helps a new student with personal info.",
+    lines: [
+      { speaker: "Secretary", line: "Welcome to the school. I need some information, please." },
+      { speaker: "Student", line: "Okay. I am ready." },
+      { speaker: "Secretary", line: "How old are you?" },
+      { speaker: "Student", line: "I am 19 years old." },
+      { speaker: "Secretary", line: "And what is your address?" },
+      { speaker: "Student", line: "I live on Oak Street." },
+      { speaker: "Secretary", line: "Perfect. Here is your class schedule." },
+      { speaker: "Student", line: "Thank you very much!" },
+    ],
     questions: [
       { q: "The secretary asks for the student's...", options: ["age and address.", "hobbies and interests.", "favorite subjects."] },
       { q: 'What is the student\'s age?', options: ["18", "19", "20"] },
@@ -200,14 +253,146 @@ u2.idiomCards = [
   "Fill out", "Nice to meet you"
 ];
 
+/* ===== UNIT 3 DATA ===== */
+const u3 = {};
+
+u3.fillBlanks = [
+  "___ is my book. (near)",
+  "___ are your keys. (near)",
+  "___ is your bag in the corner. (far)",
+  "___ are my classmates next to me. (near)",
+  "Look at ___ bird in the tree! (far)",
+  "I like ___ flowers on this table. (near)",
+  "___ are my parents in this photo. (near)",
+  "Who is ___ person over there? (far)",
+  "___ is a good song. (near)",
+  "Can you see ___ house on the hill? (far)",
+];
+
+u3.pronounReplacements = [
+  "(I) ___ mother is kind.",
+  "(you) ___ brother is tall.",
+  "(he) ___ sister is a doctor.",
+  "(she) ___ father is a teacher.",
+  "(we) ___ parents are happy.",
+  "(they) ___ son is a student.",
+  "(I) ___ family is big.",
+  "(he) ___ name is Tom.",
+  "(she) ___ daughter is five years old.",
+  "(they) ___ daughter is very smart.",
+];
+
+u3.dialogue = [
+  { speaker: "Anna", line: "Hello, Tom! Who is this in the photo?" },
+  { speaker: "Tom", line: "This is my mother. Her name is Lisa." },
+  { speaker: "Anna", line: "Nice! And who is that?" },
+  { speaker: "Tom", line: "That is my father. His name is Mark." },
+  { speaker: "Anna", line: "Do you have any brothers or sisters?" },
+  { speaker: "Tom", line: "Yes. I have one brother and one sister." },
+  { speaker: "Anna", line: "What are their names?" },
+  { speaker: "Tom", line: "My brother is Jake and my sister is Emma." },
+  { speaker: "Anna", line: "You have a nice family!" },
+  { speaker: "Tom", line: "Thank you. These are my parents." },
+];
+
+u3.trueFalse = [
+  "Tom's mother is named Lisa.",
+  "Tom's father is named Mark.",
+  "Tom has two brothers.",
+  "Tom has one sister.",
+  "Tom's parents are in the photo.",
+];
+
+u3.mcReading = [
+  { q: "What is Tom's mother's name?", options: ["Lisa", "Emma", "Anna"] },
+  { q: "How many brothers does Tom have?", options: ["One", "Two", "Three"] },
+  { q: "What is Tom's sister's name?", options: ["Jake", "Emma", "Lisa"] },
+];
+
+u3.readingFill = [
+  '"This is my {____}. Her name is Lisa."',
+  '"That is my father. {____} name is Mark."',
+  '"I have one brother and one {____}."',
+  '"{____} are my parents."',
+];
+
+u3.listeningExercises = [
+  {
+    dialogueNum: 1,
+    title: "A student shows a family photo.",
+    lines: [
+      { speaker: "Teacher", line: "Good morning! What is that in your hand?" },
+      { speaker: "Student", line: "Good morning. This is a photo of my family." },
+      { speaker: "Teacher", line: "Oh, nice! Who is this?" },
+      { speaker: "Student", line: "This is my mother and this is my father." },
+      { speaker: "Teacher", line: "And who is that?" },
+      { speaker: "Student", line: "That is my brother. His name is Sam." },
+      { speaker: "Teacher", line: "Do you have any sisters?" },
+      { speaker: "Student", line: "No, I don't. I have one brother." },
+    ],
+    questions: [
+      { q: "What is in the student's hand?", options: ["A book", "A photo", "A phone"] },
+      { q: "What is the brother's name?", options: ["Sam", "The teacher", "The father"] },
+      { q: "How many sisters does the student have?", options: ["One", "Two", "None"] },
+    ],
+  },
+  {
+    dialogueNum: 2,
+    title: "Two friends talk about siblings.",
+    lines: [
+      { speaker: "Emma", line: "Do you have any brothers or sisters?" },
+      { speaker: "Liam", line: "Yes, I have two sisters." },
+      { speaker: "Emma", line: "Wow! What are their names?" },
+      { speaker: "Liam", line: "Their names are Mia and Sophie." },
+      { speaker: "Emma", line: "That is nice. I have one brother." },
+      { speaker: "Liam", line: "What is his name?" },
+      { speaker: "Emma", line: "His name is Ethan." },
+      { speaker: "Liam", line: "Are these your sisters in the photo?" },
+      { speaker: "Emma", line: "No, those are my cousins." },
+    ],
+    questions: [
+      { q: "How many sisters does Liam have?", options: ["One", "Two", "Three"] },
+      { q: "What is Emma's brother's name?", options: ["Mia", "Ethan", "Liam"] },
+      { q: "Who are the people in Emma's photo?", options: ["Her sisters", "Her cousins", "Her parents"] },
+    ],
+  },
+  {
+    dialogueNum: 3,
+    title: "A husband and wife talk about their son.",
+    lines: [
+      { speaker: "Sarah", line: "Look at this photo! Our son is so big now!" },
+      { speaker: "Mike", line: "Yes, he is growing up so fast." },
+      { speaker: "Sarah", line: "This is him at school with his friends." },
+      { speaker: "Mike", line: "And who is that?" },
+      { speaker: "Sarah", line: "That is his teacher, Mrs. Jones." },
+      { speaker: "Mike", line: "Is this his classroom?" },
+      { speaker: "Sarah", line: "Yes, these are his classmates." },
+      { speaker: "Mike", line: "He looks happy. Like father, like son!" },
+    ],
+    questions: [
+      { q: "Who is in the photo?", options: ["Sarah's husband", "Sarah's son", "Sarah's father"] },
+      { q: "Who is Mrs. Jones?", options: ["The son's teacher", "The son's mother", "The son's friend"] },
+      { q: "What does Mike say at the end?", options: ["Grow up", "Like father, like son", "Nice to meet you"] },
+    ],
+  },
+];
+
+u3.vocabCards = [
+  "Mother", "Father", "Brother", "Sister", "Son",
+  "Daughter", "Husband", "Wife", "Parents"
+];
+u3.idiomCards = [
+  "Grow up", "Like father, like son"
+];
+
 function toFilename(word) {
   return word.toLowerCase().replace(/'/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
 function renderFlashcards(p) {
-  var prefix = p === 'u1' ? 'u1' : 'u2';
-  var dir = p === 'u1' ? 'unit-1' : 'unit-2';
-  var data = p === 'u1' ? u1 : u2;
+  var prefix = p === 'u1' ? 'u1' : p === 'u2' ? 'u2' : 'u3';
+  var dir = p === 'u1' ? 'unit-1' : p === 'u2' ? 'unit-2' : 'unit-3';
+  var data = p === 'u1' ? u1 : p === 'u2' ? u2 : u3;
 
   function renderGrid(id, cards, folder) {
     var grid = document.getElementById(prefix + '-' + id);
@@ -231,7 +416,7 @@ function blankHTML() {
 }
 
 function renderUnit(p) {
-  const data = p === 'u1' ? u1 : u2;
+  const data = p === 'u1' ? u1 : p === 'u2' ? u2 : u3;
 
   // Fill in the Blanks
   const fb = document.getElementById(p + '-fill-blanks');
@@ -354,4 +539,6 @@ document.addEventListener('DOMContentLoaded', function () {
   renderUnit('u1');
   renderFlashcards('u2');
   renderUnit('u2');
+  renderFlashcards('u3');
+  renderUnit('u3');
 });

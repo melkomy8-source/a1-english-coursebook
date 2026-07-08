@@ -27,6 +27,7 @@
     <span class="unit-nav-title">Komy's Academy</span>
     <button class="unit-btn active" data-unit="1" onclick="switchUnit(1)">Unit 1: Hello</button>
     <button class="unit-btn" data-unit="2" onclick="switchUnit(2)">Unit 2: Personal Info</button>
+    <button class="unit-btn" data-unit="3" onclick="switchUnit(3)">Unit 3: Family</button>
   </nav>
 
   <div class="container">
@@ -673,8 +674,314 @@
 
     </div>
 
+    <!-- ==================== UNIT 3 ==================== -->
+    <div class="unit" id="unit-3">
+
+      <!-- Page 1: Title bar + Phonetics + Vocabulary -->
+      <div class="a4-page">
+        <div class="a4-page-content">
+          <div class="page-1-header">
+            <div class="page-1-logo-wrap">
+              <img src="logo.jpg" alt="" class="page-1-logo" />
+            </div>
+            <h1 class="page-1-title">Unit 3: Family</h1>
+          </div>
+
+          <section class="section" id="part-1">
+            <div class="section-header">
+              <div class="section-num">1</div>
+              <div>
+                <h2 class="section-title">Phonetics</h2>
+              </div>
+            </div>
+            <div class="table-wrap compact">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th class="th-sm">Sound</th>
+                    <th>Example Words</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="sound-cell">/ð/</td><td class="example-cell"><strong class="hl-sound">th</strong>ough, mo<strong class="hl-sound">th</strong>er</td></tr>
+                  <tr><td class="sound-cell">/ŋ/</td><td class="example-cell">morni<strong class="hl-sound">ng</strong>, si<strong class="hl-sound">ng</strong></td></tr>
+                  <tr><td class="sound-cell">/ɔː/</td><td class="example-cell">f<strong class="hl-sound">or</strong>k, d<strong class="hl-sound">au</strong>ghter</td></tr>
+                  <tr><td class="sound-cell">/ɑː/</td><td class="example-cell">f<strong class="hl-sound">a</strong>ther, c<strong class="hl-sound">al</strong>m</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="section" id="part-2a">
+            <div class="section-header">
+              <div class="section-num">2</div>
+              <div>
+                <h2 class="section-title">Vocabulary</h2>
+              </div>
+            </div>
+            <p class="section-desc">Learn family member words with flashcards.</p>
+            <div class="flashcard-grid vocab" id="u3-vocab-grid"></div>
+          </section>
+        </div>
+        <div class="a4-page-footer">
+          <div class="footer-row">
+            <div class="footer-brand">
+              <img src="logo.jpg" alt="" class="footer-sm-logo" />
+              <span>Komy's Academy &middot; Live and Learn</span>
+            </div>
+            <span>A1 English &middot; Unit 3 &middot; Family</span>
+            <span class="footer-page-num">&mdash; Page 1 &mdash;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2: Idioms + Grammar table -->
+      <div class="a4-page">
+        <div class="a4-page-content">
+          <section class="section" id="part-2b">
+            <div class="section-header">
+              <div class="section-num">2</div>
+              <div>
+                <h2 class="section-title">Vocabulary <span class="continued">(continued)</span></h2>
+              </div>
+            </div>
+            <h3 class="subheading">Phrasal Verbs &amp; Idioms</h3>
+            <div class="flashcard-grid idiom" id="u3-idiom-grid"></div>
+          </section>
+
+          <section class="section" id="part-3a">
+            <div class="section-header">
+              <div class="section-num">3</div>
+              <div>
+                <h2 class="section-title">Grammar</h2>
+              </div>
+            </div>
+            <h3 class="subheading">Demonstratives: this, that, these, those</h3>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th class="th-sm">Word</th>
+                    <th>Distance</th>
+                    <th>Number</th>
+                    <th>Example Sentence</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="pronoun-cell">this</td><td>near</td><td>singular</td><td class="example-cell">This is my mother.</td></tr>
+                  <tr><td class="pronoun-cell">that</td><td>far</td><td>singular</td><td class="example-cell">That is my father.</td></tr>
+                  <tr><td class="pronoun-cell">these</td><td>near</td><td>plural</td><td class="example-cell">These are my parents.</td></tr>
+                  <tr><td class="pronoun-cell">those</td><td>far</td><td>plural</td><td class="example-cell">Those are my friends.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+        <div class="a4-page-footer">
+          <div class="footer-row">
+            <div class="footer-brand">
+              <img src="logo.jpg" alt="" class="footer-sm-logo" />
+              <span>Komy's Academy &middot; Live and Learn</span>
+            </div>
+            <span>A1 English &middot; Unit 3 &middot; Family</span>
+            <span class="footer-page-num">&mdash; Page 2 &mdash;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 3: Grammar continued -- exercises -->
+      <div class="a4-page">
+        <div class="a4-page-content" style="display:flex;flex-direction:column;">
+          <section class="section" id="part-3b" style="flex:1;display:flex;flex-direction:column;">
+            <div class="section-header">
+              <div class="section-num">3</div>
+              <div>
+                <h2 class="section-title">Grammar <span class="continued">(continued)</span></h2>
+              </div>
+            </div>
+
+            <div class="exercise-card" style="margin-top:0;">
+              <div class="exercise-header">
+                <span class="orange-bar"></span>
+                <h4 class="exercise-title">Fill in the Blanks</h4>
+              </div>
+              <p class="exercise-instr"><strong>Instructions:</strong> Complete each sentence with the correct demonstrative (this, that, these, or those). The clue in parentheses tells you if it is near or far.</p>
+              <ol class="exercise-list two-col" id="u3-fill-blanks"></ol>
+            </div>
+
+            <div style="flex:1;"></div>
+
+            <div class="exercise-card" style="margin-bottom:1.5rem;">
+              <div class="exercise-header">
+                <span class="orange-bar"></span>
+                <h4 class="exercise-title">Possessive Adjectives</h4>
+              </div>
+              <p class="exercise-instr"><strong>Instructions:</strong> Replace the word in parentheses with the correct possessive adjective (my, your, his, her, our, their).</p>
+              <ol class="exercise-list two-col" id="u3-pronoun-replacements"></ol>
+            </div>
+          </section>
+        </div>
+        <div class="a4-page-footer">
+          <div class="footer-row">
+            <div class="footer-brand">
+              <img src="logo.jpg" alt="" class="footer-sm-logo" />
+              <span>Komy's Academy &middot; Live and Learn</span>
+            </div>
+            <span>A1 English &middot; Unit 3 &middot; Family</span>
+            <span class="footer-page-num">&mdash; Page 3 &mdash;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 4: Reading dialogue -->
+      <div class="a4-page">
+        <div class="a4-page-content">
+          <section class="section" id="part-4a">
+            <div class="section-header">
+              <div class="section-num">4</div>
+              <div>
+                <h2 class="section-title">Reading</h2>
+              </div>
+            </div>
+            <h3 class="subheading italic">Meet My Family</h3>
+            <figure class="figure-card">
+              <img src="images/unit-3/u3-reading-scene.png" alt="Two friends looking at a family photo together" class="figure-img" />
+            </figure>
+            <div class="dialogue-box" id="u3-reading-dialogue" style="margin-top:4.5rem;"></div>
+          </section>
+        </div>
+        <div class="a4-page-footer">
+          <div class="footer-row">
+            <div class="footer-brand">
+              <img src="logo.jpg" alt="" class="footer-sm-logo" />
+              <span>Komy's Academy &middot; Live and Learn</span>
+            </div>
+            <span>A1 English &middot; Unit 3 &middot; Family</span>
+            <span class="footer-page-num">&mdash; Page 4 &mdash;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 5: Reading comprehension -->
+      <div class="a4-page">
+        <div class="a4-page-content">
+          <section class="section" id="part-4b" style="flex:1;display:flex;flex-direction:column;">
+            <div class="section-header">
+              <div class="section-num">4</div>
+              <div>
+                <h2 class="section-title">Reading <span class="continued">(continued)</span></h2>
+              </div>
+            </div>
+            <h3 class="subheading" style="margin-bottom:0.75rem;">Reading Comprehension</h3>
+
+            <div class="exercise-card" style="margin-top:0;">
+              <h4 class="comp-header"><span class="orange-bar-sm"></span> Part 1 &middot; True or False</h4>
+              <ol class="comp-list" id="u3-true-false"></ol>
+            </div>
+
+            <div class="exercise-card" style="margin-top:0.75rem;">
+              <h4 class="comp-header"><span class="orange-bar-sm"></span> Part 2 &middot; Multiple Choice</h4>
+              <div id="u3-mc-reading" class="mc-grid"></div>
+            </div>
+
+            <div class="exercise-card" style="margin-top:0.75rem;">
+              <h4 class="comp-header"><span class="orange-bar-sm"></span> Part 3 &middot; Fill in the Blanks</h4>
+              <p class="exercise-instr">Complete the sentences using words from the dialogue:</p>
+              <p class="exercise-instr" style="font-weight:700;color:var(--navy-deep);letter-spacing:0.1em;">mother &ndash; father &ndash; sister &ndash; these</p>
+              <ol start="8" class="comp-list" id="u3-reading-fill"></ol>
+            </div>
+          </section>
+        </div>
+        <div class="a4-page-footer">
+          <div class="footer-row">
+            <div class="footer-brand">
+              <img src="logo.jpg" alt="" class="footer-sm-logo" />
+              <span>Komy's Academy &middot; Live and Learn</span>
+            </div>
+            <span>A1 English &middot; Unit 3 &middot; Family</span>
+            <span class="footer-page-num">&mdash; Page 5 &mdash;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 6: Listening -->
+      <div class="a4-page">
+        <div class="a4-page-content">
+          <section class="section" id="part-5">
+            <div class="section-header">
+              <div class="section-num">5</div>
+              <div>
+                <h2 class="section-title">Listening</h2>
+              </div>
+            </div>
+            <div id="u3-listening-exercises"></div>
+          </section>
+        </div>
+        <div class="a4-page-footer">
+          <div class="footer-row">
+            <div class="footer-brand">
+              <img src="logo.jpg" alt="" class="footer-sm-logo" />
+              <span>Komy's Academy &middot; Live and Learn</span>
+            </div>
+            <span>A1 English &middot; Unit 3 &middot; Family</span>
+            <span class="footer-page-num">&mdash; Page 6 &mdash;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 7: Listening continued + Speaking -->
+      <div class="a4-page">
+        <div class="a4-page-content">
+          <section class="section">
+            <div class="section-header">
+              <div class="section-num">5</div>
+              <div>
+                <h2 class="section-title">Listening <span class="continued">(continued)</span></h2>
+              </div>
+            </div>
+            <div id="u3-listening-dialogue-3"></div>
+          </section>
+
+          <section class="section" id="part-6" style="margin-top:2rem;">
+            <div class="section-header">
+              <div class="section-num">6</div>
+              <div>
+                <h2 class="section-title">Speaking</h2>
+              </div>
+            </div>
+            <div class="speaking-card">
+              <div class="speaking-bg-circle"></div>
+              <div class="speaking-content">
+                <div class="speaking-label">Activity</div>
+                <h3 class="speaking-title">&ldquo;Family Photo&rdquo; Presentation</h3>
+                <p class="speaking-desc"><strong class="orange-strong">Task: </strong>Students bring a photo of their family (real or imaginary). They stand in front of the class and introduce each person using demonstratives and family vocabulary.</p>
+                <div class="speaking-example-label">Example target output</div>
+                <div class="speaking-example">
+                  <div class="speaking-line">
+                    <div class="speaker-label">Student</div>
+                    <div class="speaker-line italic">&ldquo;This is my mother. Her name is [Name]. That is my father. His name is [Name]. These are my parents.&rdquo;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="a4-page-footer">
+          <div class="footer-row">
+            <div class="footer-brand">
+              <img src="logo.jpg" alt="" class="footer-sm-logo" />
+              <span>Komy's Academy &middot; Live and Learn</span>
+            </div>
+            <span>A1 English &middot; Unit 3 &middot; Family</span>
+            <span class="footer-page-num">&mdash; Page 7 &mdash;</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
