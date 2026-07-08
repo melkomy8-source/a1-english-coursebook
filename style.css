@@ -357,9 +357,9 @@ h1, h2, h3, h4 {
 }
 .dialogue-line {
   display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
+  grid-template-columns: 130px 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
 }
 .dialogue-speaker {
   font-family: "Fraunces", Georgia, serif;
@@ -373,7 +373,13 @@ h1, h2, h3, h4 {
 .dialogue-text { color: var(--text); }
 
 /* MC Options */
+.mc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem 2rem;
+}
 .mc-block { margin-bottom: 0.75rem; }
+.mc-grid .mc-block { margin-bottom: 0.25rem; }
 .mc-question { font-weight: 600; margin-bottom: 0.4rem; color: var(--text); }
 .mc-question .q-num { color: var(--orange); font-weight: 700; margin-right: 0.5rem; }
 .mc-options { margin-left: 1.5rem; list-style: none; }
