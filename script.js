@@ -186,19 +186,23 @@ u2.listeningExercises = [
 
 /* ===== FLASHCARD DATA ===== */
 u1.vocabCards = [
-  "Hello", "Goodbye", "Yes", "No", "Please",
-  "Thank you", "Good morning", "My name is...", "Nice to meet you", "How are you?"
+  "Hello", "Goodbye", "Morning", "Name", "Nice",
+  "Meet", "Yes", "No", "Please", "Thank you"
 ];
 u1.idiomCards = [
-  "What's up?", "Sit down", "Come in"
+  "Sit down", "What's up?"
 ];
 u2.vocabCards = [
-  "Name", "Age", "Country", "City", "Address",
-  "Phone", "Email", "Single", "Married", "Spell"
+  "Age", "Country", "City", "Address", "Phone",
+  "Email", "Single", "Married", "Spell"
 ];
 u2.idiomCards = [
-  "Fill out", "Show up", "Get along"
+  "Fill out", "Nice to meet you"
 ];
+
+function toFilename(word) {
+  return word.toLowerCase().replace(/'/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
 
 function renderFlashcards(p) {
   var prefix = p === 'u1' ? 'u1' : 'u2';
@@ -207,8 +211,8 @@ function renderFlashcards(p) {
   function renderGrid(id, cards, folder) {
     var grid = document.getElementById(prefix + '-' + id);
     if (!grid) return;
-    cards.forEach(function (word, i) {
-      var imgSrc = 'images/' + prefix + '/' + prefix + '-' + folder + '-' + (i + 1) + '.png';
+    cards.forEach(function (word) {
+      var imgSrc = 'images/' + prefix + '/' + prefix + '-' + folder + '-' + toFilename(word) + '.png';
       var item = document.createElement('div');
       item.className = 'flashcard-item';
       item.innerHTML = '<img src="' + imgSrc + '" alt="' + word + '" loading="lazy" /><div class="flashcard-label">' + word + '</div>';

@@ -229,7 +229,7 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(5, 1fr);
 }
 .flashcard-grid.idiom {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .flashcard-item {
   background: white;
