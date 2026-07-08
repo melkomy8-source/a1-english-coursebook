@@ -204,29 +204,20 @@ function renderFlashcards(p) {
   var prefix = p === 'u1' ? 'u1' : 'u2';
   var data = p === 'u1' ? u1 : u2;
 
-  // Vocab grid (first 8 items on page 1, remaining 2 on page 2)
-  var vg1 = document.getElementById(prefix + '-vocab-grid');
-  if (vg1) {
-    data.vocabCards.forEach(function (word, i) {
-      var imgSrc = 'images/' + prefix + '/' + prefix + '-vocab-' + (i + 1) + '.png';
+  function renderGrid(id, cards, folder) {
+    var grid = document.getElementById(prefix + '-' + id);
+    if (!grid) return;
+    cards.forEach(function (word, i) {
+      var imgSrc = 'images/' + prefix + '/' + prefix + '-' + folder + '-' + (i + 1) + '.png';
       var item = document.createElement('div');
       item.className = 'flashcard-item';
-      item.innerHTML = '<img src="' + imgSrc + '" alt="' + word + '" loading="lazy" />';
-      vg1.appendChild(item);
+      item.innerHTML = '<img src="' + imgSrc + '" alt="' + word + '" loading="lazy" /><div class="flashcard-label">' + word + '</div>';
+      grid.appendChild(item);
     });
   }
 
-  // Idiom grid
-  var ig = document.getElementById(prefix + '-idiom-grid');
-  if (ig) {
-    data.idiomCards.forEach(function (word, i) {
-      var imgSrc = 'images/' + prefix + '/' + prefix + '-idiom-' + (i + 1) + '.png';
-      var item = document.createElement('div');
-      item.className = 'flashcard-item';
-      item.innerHTML = '<img src="' + imgSrc + '" alt="' + word + '" loading="lazy" />';
-      ig.appendChild(item);
-    });
-  }
+  renderGrid('vocab-grid', data.vocabCards, 'vocab');
+  renderGrid('idiom-grid', data.idiomCards, 'idiom');
 }
 
 /* ===== RENDER ENGINE ===== */
