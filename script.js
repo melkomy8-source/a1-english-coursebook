@@ -206,13 +206,14 @@ function toFilename(word) {
 
 function renderFlashcards(p) {
   var prefix = p === 'u1' ? 'u1' : 'u2';
+  var dir = p === 'u1' ? 'unit-1' : 'unit-2';
   var data = p === 'u1' ? u1 : u2;
 
   function renderGrid(id, cards, folder) {
     var grid = document.getElementById(prefix + '-' + id);
     if (!grid) return;
     cards.forEach(function (word) {
-      var imgSrc = 'images/' + prefix + '/' + prefix + '-' + folder + '-' + toFilename(word) + '.png';
+      var imgSrc = 'images/' + dir + '/' + prefix + '-' + folder + '-' + toFilename(word) + '.png';
       var item = document.createElement('div');
       item.className = 'flashcard-item';
       item.innerHTML = '<img src="' + imgSrc + '" alt="' + word + '" loading="lazy" /><div class="flashcard-label">' + word + '</div>';
